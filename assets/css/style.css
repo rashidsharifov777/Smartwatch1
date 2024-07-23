@@ -1,0 +1,652 @@
+/*Font Family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">');
+/*Reset css*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/*First Section*/
+
+
+.first-section {
+    background-image: url('../images/first-bg.jpeg');
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.section-inner {
+    width: 80%;
+    z-index: 1;
+}
+
+.first-section .section-inner {
+    margin-bottom: 100px;
+}
+
+.first-section h1 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 56px;
+    text-align: center;
+}
+
+.first-section h1,
+.section-content h2 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+
+}
+
+.first-section p {
+    color: #fff;
+    width: 80%;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+/*Second section*/
+
+.second-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    padding: 50px 0;
+}
+
+.section-content {
+    width: 40%;
+}
+
+.section-content h2 {
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.section-content p {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.section-content a {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    display: block;
+    margin-top: 20px;
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    transition: all .5s ease-in-out;
+}
+
+.section-content a:hover {
+    color: #fff;
+    background-color: #000;
+}
+
+.second-section .section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-section img {
+    width: 55%;
+}
+
+.third-section {
+    background-color: #35506d;
+    padding: 40px 0;
+}
+
+.third-section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.third-section .section-inner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.third-element {
+    width: 30%;
+}
+
+.element1,
+.element3 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.element1 li,
+.element3 li {
+    color: #fff;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.element1 li img,
+.element3 li img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+.element1 li p,
+.element3 li p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.element1 li h4,
+.element3 li h4 {
+    font-weight: 400;
+}
+
+/*Responsive breakpoints*/
+
+
+/*Mobile*/
+
+@media(max-width:767px) {
+    .first-section h1 {
+        font-size: 40px;
+    }
+
+    .section-inner {
+        width: 90%;
+    }
+
+    .second-section .section-inner,
+    .third-section .section-inner {
+        flex-direction: column;
+    }
+
+    .second-section .section-content,
+    .second-section img,
+    .third-element {
+        width: 100%;
+    }
+
+    .third-section h2 {
+        font-size: 23px;
+    }
+}
+
+
+/* fourth section */
+.fourth-section {
+    background-image: url('../images/fourth-image.jpeg');
+    background-position: center;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.fourth-section .section-inner {
+    margin-bottom: 231px;
+}
+
+.fourth-section h1 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    margin: 400px 20px 0px;
+}
+
+.fourth-section h1,
+.section-content h2 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+
+}
+
+.fourth-section p {
+    color: #fff;
+    width: 80%;
+    text-align: left;
+    margin: 25px 20px 30px;
+    line-height: 1.5;
+}
+
+.fourth-section .read-more a {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    /* Белая рамка */
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* Сдвиг вправо */
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+    /* Белый текст */
+    padding: 15px 30px;
+    /* Увеличиваем внутренние отступы */
+    font-size: 15px;
+    /* Увеличиваем размер шрифта */
+    transition: all .5s ease-in-out;
+}
+
+.fourth-section .read-more a:hover {
+    color: black;
+    /* Белый текст при наведении */
+    background-color: #fff;
+    /* Белый фон при наведении */
+
+}
+
+
+
+/* fifth section */
+
+.fifth-section {
+    background-image: url('../images/fifth-image.jpeg');
+    background-position: center;
+    height: 620px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+
+.fifth-section h1,
+.fifth-section p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fifth-section .section-inner {
+    text-align: right;
+   
+    color: #fff;
+   
+}
+
+.fifth-section h1 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1.1;
+
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    margin: 95px 20px 10px -30px;
+}
+
+.fifth-section p {
+    color: #fff;
+    width: 80%;
+    
+    text-align: right;
+    
+    margin: 15px -10px 30px 205px;
+   
+    line-height: 1.5;
+}
+
+
+.fifth-section .section-inner {
+    transform: translateY(-60%);
+    color: #fff;
+}
+
+.fifth-section .read-more a {
+
+    border: 2px solid #fff;
+  
+    display: block;
+    margin: 40px 20px 40px -30px;
+    
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+   
+    padding: 15px 40px;
+
+    font-size: 15px;
+   
+    transition: all .5s ease-in-out;
+}
+
+.fifth-section .read-more a:hover {
+    color: black;
+   
+    background-color: #fff;
+   
+
+}
+
+.fifth-section .read-more {
+    position: absolute;
+    bottom: -80px;
+  
+    right: 20px;
+   
+    text-align: right;
+   
+}
+
+/*six sectiom*/
+
+.six-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.six-section .section-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.six-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.six-section .section-content {
+    display: flex;
+    align-items: stretch; 
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.six-section .left-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.six-section .right-content {
+    width: 50%;
+}
+
+.six-section .item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.six-section .item img {
+    width: 100px; 
+    margin-right: 15px;
+}
+
+.six-section .text-content {
+    flex: 1; 
+}
+
+.six-section .text-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.six-section .text-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.six-section .right-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+
+
+
+
+
+
+
+
+/* seventh section */
+.seven-section {
+    background-image: url('../images/seven-image.jpeg');
+    background-position: center;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+.seven-section .section-inner {
+    margin-bottom: 231px;
+}
+
+.seven-section h1 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+    text-align: left;
+    position: relative;
+    margin: 400px 20px 0px;
+}
+
+.seven-section h1,
+.section-content h2 {
+    font-family: "Ubuntu", sans-serif;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+
+}
+
+.seven-section p {
+    color: #fff;
+    width: 80%;
+    text-align: left;
+    margin: 25px 20px 30px;
+    line-height: 1.5;
+}
+
+.seven-section .read-more a {
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+  
+    padding: 15px 30px;
+    
+    font-size: 15px;
+    
+    transition: all .5s ease-in-out;
+}
+
+.seven-section .read-more a:hover {
+    color: black;
+  
+    background-color: #fff;
+    
+
+}
+.seven-section a.link {
+    color: #fff; 
+    text-decoration: none;
+    position: relative; 
+}
+
+.seven-section a.link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px; 
+    width: 100%;
+    height: 1px; 
+    background-color: #fff; 
+    transition: all 0.3s ease;
+    transform: scaleX(0); 
+}
+
+.seven-section a.link:hover::after {
+    transform: scaleX(1); 
+}
+
+
+/* eight section */
+
+.eight-section{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/eight-image.jpeg);
+    background-position: center;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: relative;
+}
+
+
+.eight-section h1,
+.eight-section p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.eight-section .section-inner {
+    text-align: right;
+    
+    color: #fff;
+    
+}
+
+.eight-section h1 {
+    font-weight: 400;
+    font-size: 2.25rem;
+    line-height: 1.1;
+
+    font-weight: 400;
+    color: #fff;
+    text-align: right;
+    position: relative;
+    margin: 95px 20px 10px -30px;
+}
+
+.eight-section p {
+    color: #fff;
+    width: 80%;
+   
+    text-align: right;
+   
+    margin: 15px -10px 30px 205px;
+   
+    line-height: 1.5;
+}
+
+
+.eight-section .section-inner {
+    transform: translateY(-60%);
+    color: #fff;
+}
+
+.eight-section .read-more a {
+
+    border: 2px solid #fff;
+    
+    display: block;
+    margin: 40px 20px 40px -30px;
+    
+    width: max-content;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #fff;
+   
+    padding: 15px 40px;
+  
+    font-size: 15px;
+   
+    transition: all .5s ease-in-out;
+}
+
+.eight-section .read-more a:hover {
+    color: black;
+    
+    background-color: #fff;
+  
+
+}
+
+.eight-section .read-more {
+    position: absolute;
+    bottom: -80px;
+ 
+    right: 20px;
+  
+    text-align: right;
+   
+}
